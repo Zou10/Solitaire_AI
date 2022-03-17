@@ -37,12 +37,15 @@ public class Board {
      Search for Deuce in number piles and move to foundation
      Search for transferable face-up card(s) that will free a face-down card
          If search returns multiple options select pile with most face-down cards
-     Search for transferable face-up card(s) that will clear a space
+     
+         ZAINAB ---Search for transferable face-up card(s) that will clear a space
         IF yes is a king playable?
             IF yes can playing the king free up a downcard? (i.e. allow transfer of a queen)
             ELSE IF will this play benefit the pile with most downcards? (i.e. same color)
                 IF yes play then transfer card
                 THEN play king
+
+                
      Search for any card that can be transfered to an Ace-stack
          Vet candidates
              Keep candidate
