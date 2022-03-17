@@ -179,4 +179,33 @@ public class Board {
         }
         return sb.toString();
     }*/
+
+
+
+    public void FromDeckToDiscard(CardDeck source, CardDeck destination, int index) {
+        int n = 1;
+        if ( source.size() == 0 ){
+            while(destination.size() != 0){
+
+                source.add(destination.get(n));
+                destination.remove(n);
+                n++;
+            }
+        }
+        else{
+            destination.add(source.get(index));
+            source.remove(index);
+
+            
+            for (int i = 0; i <= destination.size()-1 ; i++){
+                destination.get(i).faceCardUp(false);
+            }
+            
+            destination.get(destination.size()-1).faceCardUp(true);
+            
+        }
+       
+}
+
+
 }

@@ -13,6 +13,18 @@ public class Game {
         System.out.println("Initial Deck Size = " + board.initialDeck.size());
         board.initialPopulateBoard();
         board.printBoard();
+
+        
+        //zainab
+        /*
+        while(board.drawDeck.size() !=0){
+            board.FromDeckToDiscard(board.drawDeck, board.drawDiscard, board.drawDeck.getTopCardIndex());
+        }
+        board.printBoard();
+        
+        */
+
+
         /*do {
             ai.executeTurn();
             if (ai.gameIsWon) {
